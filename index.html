@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScratchGoal</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">ScratchGoal</h1>
+        <p>Tells you how long you will reach <br> a certian forum number post.</p>
+    </header>
+    <article>
+        <label for="numpost">Your number of posts</label>
+        <input type="number"  class="input" id="numpost" placeholder="Number of posts" >
+        <label for="day">Posts per day</label>
+        <input type="number" class="input" id="day" placeholder="Posts per day " >
+        <label for="goal">Goal</label>
+        <input type="number" id="goal" class="input" placeholder="Your goal" >
+        <button type="submit" onclick="btn()" id="btn">Gather</button>
+
+        <p id="answer"></p>
+    </article>
+
+
+<footer>
+    <a href="#">Forum</a>
+    <a href="#">Github</a>
+</footer>
+    <script src="dynamic/script.js"></script>
+</body>
+</html>
