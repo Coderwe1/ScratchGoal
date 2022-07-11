@@ -7,15 +7,28 @@ function btn(){
        
     let d= goal- input;
 
-    let s=d/day;
+    let s= Math.round(d/day);
     
-    if(input>goal){
-        document.getElementById("answer").innerHTML="Make sure goal is bigger than input";
+
+    if(input===""){
+        document.getElementById("answer").innerHTML="Error:(";
         return;
     }
 
-    
-    document.getElementById("answer").innerHTML="It will take " + s + " days to get to the goal of " +goal + " posts";
+
+
+    if(input>goal){
+        document.getElementById("answer").innerHTML="Impossible!";
+        return;
+    }
+
+    if(s>1){
+        document.getElementById("answer").innerHTML="It will take " + s + " days to get to the goal of " +goal + " forum posts!";
+
+    }else{
+        document.getElementById("answer").innerHTML="It will take you less then a day to get to the goal of " +goal + " forum posts!";
+
+    }
 
     
 }
