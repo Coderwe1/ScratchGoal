@@ -4,6 +4,8 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family: "roboto mono", sans-serif ;
+    background-color: black;
+    color: white;
 }
 header{
     text-align: center;
@@ -33,7 +35,6 @@ article{
     margin: 0.5rem;
 }
 footer{
-    position: absolute;
-    bottom: 0;
-    padding: 1rem 1rem;
+     margin-top: 15vw;
+    padding: 0.1rem 1rem;
 }
