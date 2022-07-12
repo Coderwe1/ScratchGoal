@@ -1,5 +1,3 @@
-
-
 function btn(){
     let input = document.getElementById("numpost").value;
     let day = document.getElementById("day").value;
@@ -12,14 +10,7 @@ function btn(){
 
     if(input===""){
         document.getElementById("answer").innerHTML="Error:(";
-        return;
-    }
-
-
-
-    if(input>goal){
-        document.getElementById("answer").innerHTML="Impossible!";
-        return;
+        return false;
     }
 
     if(s>1){
